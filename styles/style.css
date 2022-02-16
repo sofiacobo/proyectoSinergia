@@ -1,0 +1,36 @@
+body{
+    background-color: #F7ECDE;
+}
+
+.portada-h{
+    height: 500px;
+}
+
+.img-h{
+    height: 200px !important;
+    width: 19rem !important;
+}
+
+.card{
+    padding: 0;
+    border-radius: 5px;
+    width: 19rem;
+}
+
+.title-1{
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.card-text{
+    margin: 0;
+}
+
+.texto-card{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.btn{
+    background-color: #54BAB9;
+}

@@ -2,6 +2,10 @@ body{
     background-color: #F7ECDE;
 }
 
+.navbar{
+    background-color: #E9DAC1;
+}
+
 .portada-h{
     height: 500px;
 }

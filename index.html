@@ -15,40 +15,54 @@
   </head>
   <body>
     <header>
-      <!--------- NAVBAR EJEMPLO ---------->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!--------- NAVBAR ---------->
+      <nav class="navbar navbar-expand-lg navbar-light"> 
+        <!-- navbar-expand-lg indica que la barra se mostrará en su tamaño completo a partir del tamaño de pantalla grande (lg), colapsándose para tamaños más pequeños. -->
+        <!-- navbar-light: esta clase se usa para configurar el color del contenido de la barra de navegación en oscuro. Cambiará el icono del conmutador para que tenga líneas más oscuras. -->
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- container-fluid (anchura variable). De esta forma las filas se alinean bien y muestran el padding correcto. Las filas se utilizan para agrupar horizontalmente a varias columnas. El contenido siempre se coloca dentro de las columnas, ya que las filas sólo deberían contener como hijos elementos de tipo columna. -->
+          <a class="navbar-brand" href="#"><img src="./img/Logo Sinergia Inmobiliaria.png" class ="img-fluit" width="15%" height="15%" alt=""></a>
+          <!-- navbar-brand muestra el nombre o logotipo de la web --> 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <!-- navbar-toggler. Se mostrará únicamente cuando el menú se colapse y se ocultará cuando el menú aparezca expandido. Cuando sea visible podremos pulsar sobre él para mostrar u ocultar el menú. Las opciones de menú, las cuales las añadiremos dentro de una lista tipo " <lu> " con la clase " . -->
             <span class="navbar-toggler-icon"></span>
+            <!-- navbar-toggler-icon (hamburguesa) en Bootstrap 4 usa un SVG background-image . Hay 2 "versiones" de la imagen del icono del conmutador. Uno para una barra de navegación clara y otro para una barra de navegación oscura -->
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <!-- collapse . navbar-collapse ", que definirá la zona que se colapsará (u ocultará) para pantallas pequeñas. Cada elemento de la lista de menú <lu> se definirá mediante una etiqueta " <li> " sobre la que aplicaremos la clase "  -->
+            <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                <!-- Cada elemento del menú será un .nav-item, los cuales contienen un enlace tipo .nav-link a la sección a mostrar. Para marcar el elemento del menú que está activo o seleccionado se utiliza la clase .active. -->
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#">Comprar</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Vender</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" >Alquilar</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+              <!-- nav-item dropdown sirve para crear una lista desplegable -->
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Busco
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Casa</a></li>
+                  <li><a class="dropdown-item" href="#">Departamento</a></li>
+                  <li><a class="dropdown-item" href="#">Edificio</a></li>
+                  <li><a class="dropdown-item" href="#">Lote Baldío</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                  <a class="nav-link" href="#">Ingresar</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Registrarte</a>
               </li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </nav>
@@ -228,6 +242,72 @@
           </div>
 
         </div>        
+      </section>
+      <!-------------- CONTACTO --------------->
+      <section class="mx-4">
+        <h1 class="title-1 text-center my-2">Contacto</h1>
+        <form class="row g-3">
+          <div class="col-md-3">
+              <label for="validationDefault01" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+          </div>
+          <div class="col-md-3">
+              <label for="validationDefault02" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
+          </div>
+          <div class="col-md-3">
+              <label for="exampleFormControlInput1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              <div id="exampleFormControlInput1Feedback" class="invalid-feedback">
+                  Por favor ingrese su Mail
+              </div>
+          </div>
+
+          <div class="col-md-3">
+              <label for="validationDefault05" class="form-label">Telefono</label>
+              <input type="text" class="form-control" id="validationDefault05" required>
+          </div>
+          <div>
+              <li>Seleccione los item de su interes:</li>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Compra
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Venta
+                  </label>
+              </div>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Alquiler
+                  </label>
+              </div>
+
+          </div>       
+          <div class="mb-3">
+              <label for="validationTextarea" class="form-label">Comentario</label>
+              <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Requiere un comentario" required></textarea>
+              <div class="invalid-feedback">
+                Por favor ingrese un comentario para expecificar 
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                  Estoy de acuerdo con los terminos y condiciones
+                </label>
+              </div>
+            </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </div>
+        </form>
       </section>
     </main>
 

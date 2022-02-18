@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
+
 body{
     background-color: #F7ECDE;
 }
@@ -22,7 +24,7 @@ body{
 }
 
 .title-1{
-    font-size: 45px;
+    font-size: 40px;
     text-transform: uppercase;
 }
 
@@ -38,3 +40,158 @@ body{
 .btn{
     background-color: #54BAB9;
 }
+
+/* ESTILOS MARCOS */
+
+.cards {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.contacto{
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.carrusel{
+  border-top: 5px solid rgba(0, 0, 0, 0.541);
+}
+
+/* ESTILO PRESENTACION */
+.presentacion {
+  color: black;
+  font-size: 16px; 
+  font-family: 'Lato' ,sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  border-top: 5px solid rgba(0, 0, 0, 0.541);
+  
+}
+
+section .presentacion {
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+.presentacion h1,
+h2,h4
+{
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgb(84, 186, 185);
+}
+
+/* media query letras columna descripcion presentacion */
+@media (min-width: 992px){
+  div.example {
+    color: black;
+    font-size: 12px; 
+    font-family: 'Lato' ,sans-serif;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+  }
+  }
+  @media (min-width: 1330px){
+    div.example {
+      color: black;
+      font-size: 16px; 
+      font-family: 'Lato' ,sans-serif;
+      line-height: 1.8;
+      letter-spacing: 0.5px;
+    }
+    }
+
+    @media (min-width: 992px){
+      h2.example {
+        font-size: 34px; 
+        color: rgb(84, 186, 185);
+      }
+      }
+
+/* ESTILOS FOOTER */
+
+.footer-top {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-family: 'Lato' ,sans-serif;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+.footer-bottom {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer .footer-links a,
+footer .social-icons a {
+  color: #898fa1;
+}
+
+footer .social-icons a {
+  font-size: 24px;
+}
+
+footer .footer-links a {
+  display: block;
+  font-weight: 400;
+}
+
+footer .social-icons a:hover,
+footer .footer-links a:hover {
+  color: rgb(84, 186, 185);
+}
+
+.team-member .team-member-img img,
+.team-member .team-member-img .social-icons {
+   transition: all 0.4s ease;
+}
+
+.team-member .team-member-img {
+   position: relative;
+   overflow: hidden;
+}
+
+.team-member .team-member-img .social-icons {
+   width: 100%;
+   height: 60px;
+   background-color: rgb(84, 186, 185);
+   
+
+}
+
+.team-member .team-member-img .social-icons a {
+   width: 40px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 25px;
+   border-radius: 100px;
+   margin-left: 4px;
+   margin-right: 4px;
+}
+
+.team-member .team-member-img .social-icons a:hover {
+   
+   color: rgb(233, 218, 193);
+}
+
+.team-member:hover .team-member-img .social-icons {
+   bottom: 0;
+}
+
+.team-member:hover img {
+   transform: translateY(-60px);
+}
+
+.title-sm {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.logo-text {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: rgb(84, 186, 185);;
+}
+
+  

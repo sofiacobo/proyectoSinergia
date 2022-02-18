@@ -11,6 +11,10 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body>
@@ -69,7 +73,7 @@
     </header>
     <main>
       <!-------------- CARROUSEL DE IMAGANES - PORTADA ---------------->
-      <section>
+      <section class="carrusel">
         <div id="portada" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#portada" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -94,8 +98,69 @@
         </div>
       </section>
 
+      <!-------------- PRESENTACION - NUESTRA EMPRESA ---------------->
+
+      <section class="presentacion py-3">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 example col-xl-4 p-1 order-lg-2 ">
+              <article>
+                <h2 class=" title-1 example text-center my-2 mb-3 ">Nuestra empresa</h2>
+                <h4>Compromiso</h4>
+                <p>
+                  Somos grandes y prestigiosos dentro del mercado inmobiliario.
+                  Contamos con operaciones de inmuebles los 365 días del año
+                  verificadas. Ofrecemos una atención personalizada y
+                  profesional en todas nuestras sucursales.
+                </p>
+                <h4>Operaciones</h4>
+                <p>
+                  Nuestras operaciones se extienden a través de diferentes
+                  líneas de negocios, tales como la venta, compra y alquiler de
+                  propiedades. Adicionalmente, desarrollamos líneas de créditos
+                  que complementan nuestras operaciones centrales. Todas ellas
+                  cuentan con un gran reconocimiento y prestigio entre los
+                  firmantes, destacándose el excelente nivel de servicio y
+                  satisfacción para el cliente. Esto nos ha convertido en
+                  lideres dentro del rubro.
+                </p>
+                <h4>Objetivo Central</h4>
+                <p>
+                  En Sinergia propiedades, nuestro objetivo central es poder
+                  convertirnos en la mejor inmobiliaria de la ciudad, brindando
+                  satisfacción a miles de clientes , asegurando la máxima
+                  calidad de servicio, excelencia y compromiso a los futuros
+                  propietarios y/o locatarios.
+                </p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-4 pt-lg-5 order-lg-2">
+              <img src="./img/oficinas.jpg"
+              width="100%"
+              height="500px"
+              >
+              <div class="d-flex justify-content-center col-12 col-sm-10 col-md-12 px-5 col-lg-12">
+                <small class="text-center fs-5"
+                  >Oficinas centrales</small
+                >
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-4 pt-lg-5 order-md-1">
+              <img src="./img/personal.jpg" alt=""
+              width="100%"
+              height="500px"
+              >
+              <div class="d-flex justify-content-center col-12 col-sm-10 col-md-12 px-5 col-lg-12">
+                <small class="text-center fs-5"
+                  >Personal administrativo para el año 2022</small
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
       <!------------------- CARDS ---------------->
-      <section class="container-fluid d-flex justify-content-center">
+      <section class="py-3 cards container-fluid d-flex justify-content-center">
         <div class="row d-flex justify-content-center">
           <h1 class="title-1 text-center my-2">Propiedades destacadas</h1>
 
@@ -244,7 +309,7 @@
         </div>        
       </section>
       <!-------------- CONTACTO --------------->
-      <section class="mx-4">
+      <section class=" py-3 contacto mx-4">
         <h1 class="title-1 text-center my-2">Contacto</h1>
         <form class="row g-3">
           <div class="col-md-3">
@@ -309,6 +374,75 @@
           </div>
         </form>
       </section>
+      
+      <!-- FOOTER -->
+      <footer>
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <h4 class="logo-text">Sinergia</h4>
+                <p>Somos grandes y prestigiosos dentro del mercado inmobiliario.
+                </p>
+                <div class="w-75 d-flex justify-content-between social-icons">
+                  <a href="#"><i class="fa fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-github"></i></a>
+               </div>
+              </div>
+              <div class="col-md-2">
+                <h5 class="title-sm">Navegación</h5>
+                <div class="footer-links">
+                  <a href="#">Inicio</a>
+                  <a href="#">Nuestra empresa</a>
+                  <a href="#">Alquileres</a>
+                  <a href="#">Contacto</a>
+
+                </div>
+              </div>
+
+              <div class="col-md-2">
+                <h5 class="title-sm">Acerca de</h5>
+                <div class="footer-links">
+                  <a href="#">FAQ's</a>
+                  <a href="#">Politicas y privacidad</a>
+                  <a href="#">Licencia</a>
+
+                </div>
+              </div>
+
+              <div class="col-md-2">
+                <h5 class="title-sm">Contacto</h5>
+                <div class="footer-links">
+                  <p class="mb">1649 San Martín, San Miguel de Tucumán, 4000</p>
+                  <p class="mb-">8(800)316-06-42</p>
+                  <p class="mb" >sinergia@inmobiliaria.com</p>
+
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="container">
+             <div class="row justify-content-between gy-3">
+                <div class="col-md-6">
+                   <p class="mb-0">© Agency2022. All rights reserved</p>
+                </div>
+                <div class="col-auto">
+                   <p class="mb-0">Created with ❤️ by SinergiaTeam</p>
+                </div>
+             </div>
+          </div>
+       </div>
+
+      </footer>
+
+
     </main>
 
     <script

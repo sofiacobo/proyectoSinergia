@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./styles/style.css">
   </head>
   <body>
-    <header>
+    <header id="inicio">
       <!--------- NAVBAR ---------->
       <nav class="navbar navbar-expand-lg navbar-light"> 
         <!-- navbar-expand-lg indica que la barra se mostrará en su tamaño completo a partir del tamaño de pantalla grande (lg), colapsándose para tamaños más pequeños. -->
@@ -73,7 +73,7 @@
     </header>
     <main>
       <!-------------- CARROUSEL DE IMAGANES - PORTADA ---------------->
-      <section class="carrusel">
+      <section id="carrusel" class="carrusel">
         <div id="portada" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#portada" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -100,7 +100,7 @@
 
       <!-------------- PRESENTACION - NUESTRA EMPRESA ---------------->
 
-      <section class="presentacion py-3">
+      <section id="presentacion" class="presentacion py-3">
         <div class="container-fluid">
           <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-4 example col-xl-4 p-1 order-lg-2 ">
@@ -160,7 +160,7 @@
         </div>
 
       <!------------------- CARDS ---------------->
-      <section class="py-3 cards container-fluid d-flex justify-content-center">
+      <section id="cards" class="py-3 cards container-fluid d-flex justify-content-center">
         <div class="row d-flex justify-content-center">
           <h1 class="title-1 text-center my-2">Propiedades destacadas</h1>
 
@@ -309,7 +309,7 @@
         </div>        
       </section>
       <!-------------- CONTACTO --------------->
-      <section class=" py-3 contacto mx-4">
+      <section id="contacto" class=" py-3 contacto mx-4">
         <h1 class="title-1 text-center my-2">Contacto</h1>
         <form class="row g-3">
           <div class="col-md-3">
@@ -394,10 +394,10 @@
               <div class="col-md-2">
                 <h5 class="title-sm">Navegación</h5>
                 <div class="footer-links">
-                  <a href="#">Inicio</a>
-                  <a href="#">Nuestra empresa</a>
-                  <a href="#">Alquileres</a>
-                  <a href="#">Contacto</a>
+                  <a href="#inicio">Inicio</a>
+                  <a href="#presentacion">Nuestra empresa</a>
+                  <a href="#cards">Alquileres</a>
+                  <a href="#contacto">Contacto</a>
 
                 </div>
               </div>
